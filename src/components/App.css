@@ -1,0 +1,476 @@
+.section__padding {
+    padding: 4rem 6rem;
+  }
+  
+  
+  .slideDrwUp{
+    overflow: hidden;
+  }
+ 
+  .flex__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .app__bg {
+    background: url('../assets/bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+  }
+  
+  
+  .app__wrapper_img {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    margin-left: 2rem;
+  }
+  
+  .app__wrapper_img-reverse {
+    justify-content: flex-start;
+    margin-right: 2rem;
+  }
+  
+  .app__wrapper_img img {
+    width: 80%;
+  }
+  
+  .custom__button {
+    background-color: var(--color-crimson);
+      color: var(--color-black);
+      font-family: var(--font-base);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      line-height: 28px;
+      font-size: 16px;
+      padding: 0.5rem 1.5rem;
+      border-radius: 1px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+  }
+  
+  .p__cormorant {
+    font-family: var(--font-base);
+    color: var(--color-white);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    line-height: 29.9px;
+    font-size: 23px;
+  }
+  
+  .p__opensans {
+    font-family: var(--font-alt);
+    color: var(--color-white);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    line-height: 28px;
+    font-size: 16px;
+  }
+  
+  .headtext__cormorant {
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    font-size: 64px;
+    line-height: 83.2px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+  }
+  
+  .spoon__img {
+    width: 45px;
+  }
+  
+  @media screen and (min-width: 2000px) {
+    .custom__button,
+    .p__cormorant {
+      font-size: 37px;
+      line-height: 67px;
+    }
+  
+    .p__opensans {
+      font-size: 30px;
+      line-height: 50px;
+    }
+  
+    .headtext__cormorant {
+      font-size: 150px;
+      line-height: 210px;
+    }
+  
+    .spoon__img {
+      width: 80px;
+    }
+  }
+  
+  @media screen and (max-width: 1150px) {
+    .app__wrapper {
+      flex-direction: column;
+    }
+  
+    .app__wrapper_img {
+      margin: 5rem 0 0 0;
+    }
+  
+    .app__wrapper_img-reverse {
+      margin: 0 0 5rem 0;
+    }
+  
+    .app__wrapper_img img {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 850px) {
+    .section__padding {
+      padding: 4rem;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .section__padding {
+      padding: 4rem 2rem;
+    }
+    
+    .p__cormorant {
+      font-size: 21px;
+    }
+  
+    .p__opensans {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .p__opensans {
+      font-size: 12px;
+    }
+  
+    .p__cormorant {
+      font-size: 19px;
+    }
+  
+    .headtext__cormorant {
+      font-size: 45px;
+      line-height: 70px;
+    }
+  }
+  
+  .AppSection__Title {
+    font-family: var(--font-base);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: var(--secondaryColor);
+    margin-bottom: 25px;
+    position: relative;
+    left: -19px;
+  
+  }
+  .AppSection__Desc{
+    font-family: var(--font-base);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0px;
+    text-align: center;
+    color: var(--color-Lightblack);
+    margin-bottom: 0;
+  }
+  
+  .ShapeBottom {
+      position: absolute;
+      top: auto;
+      bottom: -5px;
+      left: -16px;
+      z-index: 99;
+  }
+  
+  .ShapeBottom.colorShapeBottom {
+      bottom: -40px;
+      
+  }
+  
+  .ShapeTop.FeaturTop {
+      position: absolute;
+      left: 0;
+      top: 0;
+  }
+  
+  .ServiceDetail__ShapeRight {
+      position: absolute;
+      right: 70px;
+      left: auto;
+      top: 50px;
+  }
+  .AppServiceDetails__CardItems:first-child .ServiceDetail__ShapeRight {
+    right: 90px;
+    top: 16px;z-index: 2;
+  }
+  .bennerBgShape {
+    position: absolute;
+    top: -98px;
+    left: -8px;
+  }
+  .bennerRoundShape {
+    position: absolute;
+    left: 88px;
+    top: auto;
+    bottom: 149px;
+  }
+  .BennerShapeRight {
+    position: absolute;
+    left: auto;
+    right: -10px;
+    top: auto;
+    bottom: 27px;
+  }
+  .TreeShape {
+      position: absolute;
+      left: 93px;
+      top: 86px;
+  }
+  .benner__animetedRound span {
+      position: absolute;
+      width: 98px;
+      height: 98px;
+      border-radius: 100%;
+      background: #e57f5d;
+    left: 16%;
+    top: 35%;
+  }
+  .benner__animetedRound span:nth-child(2){
+    width: 34px;
+    height: 34px;
+    top: auto;
+    bottom: 25%;
+    left: 10%;
+  }
+  .FeaturesModdelImg {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 941px;
+      top: 35px;
+    -webkit-animation: upsDownShadow linear infinite 5s  both;
+      animation: upsDownShadow linear infinite 5s  both;
+  }
+  .FeaturesModdelImg {
+      position: absolute;
+      right: -156px;
+      margin: auto;
+      top: 20px;
+  }
+  
+  .RoundShape {
+      position: absolute;
+      width: 45px;
+      height: 45px;
+      border-radius: 100%;
+      background: var(--gradientRound);
+  }
+  .RoundShape.Round1 {
+      left: 26%;
+      top: 3%;
+    width: 30px;
+    height: 30px;
+  }
+  .RoundShape.Round2 {
+      left: 15%;
+      top: auto;
+      bottom: 32%;
+  }
+  /* .RoundShape.Round2{left: 25%;} */
+  .RoundShape.Round3 {
+      left: 39%;
+      top: auto;
+      bottom: 12%;
+      z-index: 9;
+    width: 30px;
+    height: 30px;
+  }
+  .RoundShape.Round4 {
+      left: auto;
+      right: 30%;
+      top: auto;
+      bottom: 0%;
+  
+      z-index: 9;
+  }
+  @media (max-width:1440px) {
+    .FeaturesModdelImg {
+      right: -306px;
+      top: 16%;
+    }
+    
+    .FeaturesModdelImg img{width: 100%;}
+  }
+  
+  @media  (max-width:1280px) {
+    .BennerShapeRight {
+        right: -122px;
+        bottom: 19px;
+    }
+    .BennerShapeRight img{
+       width: 80%;
+    }
+    .ShapeBottom {
+      left: -22%;
+    }
+    .FeaturesModdelImg {
+      right: -306px;
+      top: 6%;
+    }
+    .AppSection__Title {
+      font-size: 48px;
+      line-height: 45px;
+      margin-bottom: 20px;
+      left: 0;
+  }
+    
+  }
+  @media (max-width:1199px) {
+    .bennerRoundShape img {
+      width: 80%;
+  }
+  .TreeShape img {
+      width: 70%;
+  }
+  .ShapeBottom {
+      left: -69%;
+  }
+  .appBenner__wrapper_info .custom__button.bennerBTN {
+      width: 230px;
+      height: 59px;
+      font-size: 35px;
+      line-height: 41px;
+  }
+  .ServiceDetail__ShapeRight {
+      right: -4px;
+      top: 30px;
+  }
+  .AppSection__Title {
+      font-size: 40px;
+      line-height: 35px;
+      margin-bottom: 17px;
+      left: 0;
+  }
+  .FeaturesModdelImg img {
+      width: 88%;
+  }
+  .FeaturesModdelImg {
+      right: -43%;
+      top: 6%;
+  }
+  .AppFeaturesDetails__section::before {
+      height: calc(33% + 2px);
+  }
+  .AppFeaturesDetails__TopWrapper {
+      grid-row-gap: 322px;
+  }
+  .BennerShapeRight {
+    right: -212px;
+    bottom: 19px;
+  }
+  }
+  @media (max-width:991px) {
+    .AppSection__Title {
+      font-size: 35px;
+  
+     }
+     .TreeShape {
+      left: 44px;
+      top: 37px;
+    }
+     .FeaturesModdelImg {
+      right: -83%;
+      top: 23%;
+  }
+  .FeaturesModdelImg img {
+      width: 56%;
+  } 
+  .ServiceDetail__ShapeRight {
+      right: -53px;
+      top: 30px;
+  }
+  .AppServiceDetails__CardItems:first-child .ServiceDetail__ShapeRight {
+      right: -56px;
+      top: 16px;
+      z-index: 2;
+  }
+  .BennerShapeRight {
+      right: -284px;
+      bottom: 19px;
+  }
+  .BennerShapeRight img {
+      width: 53%;
+  }
+  }
+  @media (max-width:767px) {
+    .ShapeBottom {
+      left: 0;
+  }
+  .TreeShape {
+      left: 20px;
+      top: 29px;
+  }
+  .TreeShape img{width: 50%;}
+  .bennerBgShape {
+      position: absolute;
+      top: -95px;
+      left: -8px;
+  }
+  .appBenner__wrapper_info .custom__button.bennerBTN {
+      width: 147px;
+      height: 49px;
+      font-size: 20px;
+      line-height: 33px;
+  }
+  .bennerRoundShape img {
+      width: 50%;
+  }
+  .bennerRoundShape {
+      left: 18px;
+      bottom: 253px;
+  }
+  .ShapeTop.FeaturTop {
+      left: 0;
+      top: 0;
+  }
+  .FeaturesModdelImg {
+      right: 0;
+      top: auto;
+      bottom: -66% !important;
+  }
+  .FeaturesModdelImg img {
+      width: 52%;
+  }
+  .AppSection__Title {
+      font-size: 26px;
+  }
+  .AppSection__Desc {
+      font-size: 14px;
+  }
+  }
+  @media (max-width:767px) and (max-height:600px) {
+    .ShapeBottom {
+      bottom: -25px;
+  }
+  .app__BennerSection {
+    padding: 80px 10px 0px;
+    height: 68vh;
+  }
+  }
+  

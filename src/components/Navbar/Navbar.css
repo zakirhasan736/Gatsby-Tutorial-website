@@ -1,0 +1,409 @@
+/* import styled from 'styled-components' */
+
+.AppHeader__section{
+    position: relative;
+    background: var(--primaryColor);
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.header__TopNavbar {
+    padding: 57px 147px 20px 139px;
+}
+.navs__link{
+    position: relative;
+}
+.navs__link::before,
+.navs__link::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-white);
+    transition: all 350ms ease 0s;
+}
+@media (max-width:767px) {
+    .navs__link::before,
+    .navs__link::after{
+        background-color: var(--secondaryColor);
+    }
+}
+.navs__link::before{
+    bottom: -4px;
+    left: 0;right: 0;margin: 0 auto;
+}
+.navs__link::after{
+    bottom: -4px;
+    left: 0;right: 0;margin: 0 auto;
+}
+.navs__link:hover::before,
+.navs__link:hover::after{
+width: 50%;
+}
+
+.AppHeader__subNavLinks .navs__link::before,
+.AppHeader__subNavLinks .navs__link::after{
+background-color: var(--secondaryColor);
+}
+
+
+@media (max-width:767px) {
+    .header__TopNavbar {
+        padding: 0;
+    }
+    
+}
+.navLink__ContentBox {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+.AppHeader__subNavLinks{
+    padding: 0px 155px 0px 150px;
+    background: var(--color-white);
+}
+@media (max-width:767px) {
+    .AppHeader__subNavLinks {
+        padding: 0;
+    }
+    .app__navbar-smallscreen_overlay svg,
+    .AppHeader__subNavLinks  .app__navbar-smallscreen svg{color: var(--primaryColor) !important;}
+}
+.app__navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.app__navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.app__navbar-links {
+    flex: 1 1;
+    display: flex;
+    list-style: none;
+    margin-left: 70px;
+}
+.app__navbar-links li {
+    margin: 0;
+    cursor: pointer;
+    font-family: var(--font-base);
+font-size: 24px;
+font-weight: 500;
+line-height: 82px;
+/* letter-spacing: -1.7999999523162842px; */
+text-align: center;
+color: var(--color-white);
+margin-right: 45px;
+
+}
+.AppHeader__subNavLinks .app__navbar-links{justify-content: flex-end;}
+.AppHeader__subNavLinks .app__navbar-links li{
+    color:  var(--secondaryColor);
+}
+
+.AppHeader__subNavLinks .app__navbar-links li{
+    margin: 0;
+    margin-left: 50px;
+}
+
+.app__navbar-links li:hover {
+    color: rgba(255,255,255,.8);
+}
+.AppHeader__subNavLinks .app__navbar-links li:hover{
+    color: rgba(244, 131, 70, .8);
+} 
+.app__navbar-login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    top: -6px;
+    left: -2px;
+}
+@media (max-width:767px) {
+    .app__navbar-links li{color: var(--secondaryColor);}
+}
+
+
+.app__navbar-login a {
+    font-family: var(--font-base);
+font-size: 30px;
+font-weight: 600;
+line-height: 82px;
+/* letter-spacing: -1.7999999523162842px; */
+text-align: center;
+color: var(--color-white);white-space: nowrap;
+
+}
+.app__navbar-login a:nth-child(2){
+width: 140px;
+height: 57px;
+background: var(--color-white);
+border-radius: 80px;
+display: inline-block;
+color: var(--primaryColor);
+line-height: 57px;
+font-weight: 600;
+}
+
+.app__navbar-login a:first-child{margin-right: 30px;}
+
+
+.app__navbar-smallscreen {
+    display: none;
+}
+
+.app__navbar-smallscreen_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255,255,255,.95);
+    transition: .5s ease;
+    flex-direction: column;
+    z-index: 5;
+}
+
+.app__navbar-smallscreen_overlay .overlay__close {
+    font-size: 27px;
+    color: var(--color-golden);
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.app__navbar-smallscreen_links {
+    list-style: none;
+}
+
+.app__navbar-smallscreen_links li {
+    margin: 2rem;
+    cursor: pointer;
+    color: var(--secondaryColor);
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--font-base);
+    
+}
+
+.app__navbar-smallscreen_links li:hover {
+    color: var(--primaryColor);
+}
+.app__navbar-login a:nth-child(1):hover{
+    color: var(--color-gray);
+}
+.app__navbar-login a:nth-child(2):hover{
+    background: var(--color-gray);
+}
+@media (max-width:767px) {
+    .app__navbar-smallscreen_links li {
+        font-size: 25px;
+        margin: 2rem 0;
+    }
+   
+}
+@media screen and (min-width: 2000px) {
+    .app__navbar-logo img {
+        width: 210px;
+    }
+}
+@media  (max-width:1680px) {
+    .app__navbar-links li {
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    .app__navbar-login a:nth-child(2) {
+        height: 50px;
+        line-height: 50px;
+    }
+    .app__navbar-login a {
+        font-size: 25px;
+    }
+    .AppHeader__subNavLinks .app__navbar-links li {
+        margin: 0;
+        margin-left: 38px;
+    }
+    .AppServicess__itemsImage img {
+        width: 100%;
+    }
+}
+@media  (max-width:1440px) {
+    .header__TopNavbar {
+        padding: 57px 80px 20px 80px;
+    }
+    .AppHeader__subNavLinks {
+        padding: 0px 80px 0px 80px;
+    }
+}
+@media  (max-width:1280px) {
+    .app__navbar-login a {
+        font-size: 20px;
+    }
+    .app__navbar-login a:nth-child(2) {
+        height: 45px;
+        line-height: 47px;
+        width: 105px;
+    }
+    .app__navbar-login {
+        top: 0;
+    }
+    .header__TopNavbar {
+        padding: 57px 45px 20px 45px;
+    }
+    .AppHeader__subNavLinks {
+        padding: 0px 45px 0px 45px;
+    }
+    .app__navbar-links li {
+        font-size: 17px;
+        margin-right: 20px;
+    }
+  
+    .headingTitleBox {
+        margin-bottom: 55px;
+    }
+    .app__BennerSection {
+        padding: 175px 0 213px;
+    }
+    .BennerShapeRight {
+        right: -122px;
+        bottom: 19px;
+    }
+    .BennerShapeRight img{
+       width: 80%;
+    }
+    .appBenner__wrapper_info .custom__button.bennerBTN {
+        width: 220px;
+        height: 58px;
+        font-size: 38px;
+        line-height: 43px;
+    }
+}
+
+
+@media screen and (max-width: 1199px) {
+    .header__TopNavbar {
+        padding: 57px 45px 20px 45px;
+    }
+    .humbergerMenu {
+        width: 45px;
+        height: 45px;
+        display: block;
+        text-align: center;
+        line-height: 56px;
+        border: 2px solid #fff;
+        margin-left: 20px;
+        position: relative;
+        top: 0;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+   
+ 
+    .AppHeader__subNavLinks {
+        padding: 0px 45px 0px 45px;
+    }
+    .AppHeader__subNavLinks .app__navbar-links li {
+        margin: 0;
+        margin-left: 25px;
+        font-size: 16px;
+    }
+    .app__navbar-links li {
+        font-size: 15px;
+        margin-left: 30px;
+    }
+   .header__TopNavbar .app__navbar-links {
+        display: none;
+    }
+
+   .header__TopNavbar .app__navbar-smallscreen {
+        display: flex;
+    }
+}
+@media screen and (max-width: 991px) {
+.app__navbar-links {
+         display: none;
+     }
+ 
+  .app__navbar-smallscreen {
+         display: flex;
+     }
+ }
+@media  (max-width:991px) {
+    .app__navbar-logo img {
+        width: 70%;
+    }
+    .app__navbar-login a:first-child {
+        margin-right: 20px;
+    }
+    .app__navbar-login a:nth-child(2) {
+        height: 36px;
+        line-height: 37px;
+        width: 75px;
+        font-size: 14px;
+    }
+    .app__navbar-login a {
+        font-size: 16px;
+    }
+    .header__TopNavbar {
+        padding: 25px 35px 5px 35px;
+    }
+    .app__navbar-smallscreen_overlay svg, .AppHeader__subNavLinks .app__navbar-smallscreen svg {
+        color: var(--primaryColor) !important;
+    }
+    .header__TopNavbar  .humbergerMenu{
+        border-color: var(--color-white) !important;
+    }
+    .app__navbar-smallscreen .humbergerMenu{
+        border-color: var(--secondaryColor);
+    }
+    .AppHeader__subNavLinks {
+        padding: 8px 35px 8px 35px;
+    }
+}
+@media  (max-width:767px) {
+
+}
+@media screen and (max-width: 650px) {
+.app__navbar {
+	padding: 15px 15px 0;
+}
+
+    .app__navbar-logo img {
+        width: 110px;
+    }
+    .header__TopNavbar {
+        padding: 0;
+    }
+    .app__navbar-login a:nth-child(2) {
+        height: 32px;
+        line-height: 31px;
+        width: 60px;
+        font-size: 12px;
+    }
+    .app__navbar-login a:first-child {
+        margin-right: 10px;
+    }
+    .humbergerMenu {
+        width: 39px;
+        height: 38px;
+        line-height: 50px;
+        margin-left: 10px;
+    }
+    .app__navbar {
+        padding: 15px 15px 0;
+    }
+    .AppHeader__subNavLinks {
+        padding: 0;
+    }
+    .AppHeader__subNavLinks .app__navbar {
+        padding: 15px 15px 13px;
+    }
+  
+}
