@@ -1,16 +1,6 @@
 import images from './images';
 
-export const DynamicBennerData = [
 
-  {
-    id: '',
-    title:' 留学生专属学习平台',
-    styleTitle: '留洋通',
-    subTitle: '所有留学生的共同选择',
-    buttonText: '立刻下单',
-  },
-
-]
 
 export const ServicesTitleDyData = [
 
