@@ -1,0 +1,329 @@
+.AppServices__Section {
+    padding: 0px 90px 115px 81px;
+    position: relative;
+    background: var(--color-gray);
+        overflow: hidden;
+}
+@media (max-width:991px) {
+    .AppServices__Section {overflow: hidden;}
+        
+    }
+.AppServices__Section .AppServices__sectionWrapper {
+    padding: 62px 30px 50px 30px;
+    background-color: var(--color-white);
+    position: relative;
+    top: -27px;
+    border-radius: 15px;
+    z-index: 9;
+    margin: 0 auto;
+max-width: 1720px;
+}
+
+.AppServices__SectionBox{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.AppServices__TitleBox{margin-bottom: 28px;position: relative;}
+
+.AppServices__TitleOverly{
+    font-size: 134px;
+    line-height: 284px;
+    font-weight: 700;
+    color: var(--secondaryColor);
+    opacity: .07;
+    letter-spacing: -1.8px;
+    position: absolute;
+    top: -86px;
+    left: 0;
+    right: 0;white-space: nowrap;
+}
+
+.AppServices__SecTitle{
+    font-size: 65.15px;
+    line-height: 111.3px;
+    font-weight: 700;
+    font-family: var(--font-base);
+    color: var(--secondaryColor);
+
+}
+.AppServices__Desc {
+	font-size: 36px;
+	line-height: 48.86px;
+    font-weight: 500;
+    color: var(--color-brightGrey);
+}
+
+.AppServices__ItemsBox {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 40px;
+    text-align: center;
+}
+
+.AppServices__Desc span{display: block;}
+.AppServices__ServiceItemsBox{
+    text-align: center;
+}
+.AppServicess__cardWrapperBox{margin-bottom: 55px;}
+.AppServices__ServiceItemsBox .ServicesTitle {
+	font-size: 40.72px;
+	line-height: 48.86px;
+	color: var(--secondaryColor);
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+.AppServices__ServiceItemsBox .ServicesTitle span{
+    font-size: 57px;
+}
+.AppServices__CardItems .AppService__Title{
+ font-size: 56px;
+ line-height: 72px;
+ color: var(--secondaryColor);
+ font-weight: 600;
+ margin-bottom: 0;
+ margin-top: 55px;
+}
+.AppServicess__itemsImage{position: relative;}
+.cardImg__overlyn {
+	position: absolute;
+	top: -25px;
+	left: 0px;
+	right: 0;
+	margin: 0 auto;
+}
+.cardModelImg {
+	width: 100%;
+}
+.AppServicess__cardWrapperBox:nth-child(2) .AppServices__CardItems .AppServicess__itemsImage .cardImg__overlyn{left: -18px;}
+.custom__button.AppServicesBTN {
+	font-size: 48px;
+	line-height: 74px;
+	padding: 0 25px;
+	border-radius: 7px;
+	height: 74px;
+	color: var(--color-white);
+	background: var(--secondaryColor);
+    border: 2px solid transparent;
+    transition: all 350ms ease-in-out;
+    font-family: 'Inter', sans-serif;
+}
+.custom__button.AppServicesBTN:hover{
+  border-color: var(--secondaryColor);
+  background: transparent;
+  color: var(--secondaryColor);
+}
+
+@media  (max-width:1680px) {
+    .AppServicess__itemsImage img {
+        width: 100%;
+    }
+    .AppServices__TitleOverly {
+        font-size: 112px;
+    }
+}
+@media  (max-width:1440px) {
+    .AppServices__TitleOverly {
+        font-size: 95px;
+    }
+    .AppServices__CardItems .AppService__Title {
+        font-size: 50px;
+    }
+}
+@media  (max-width:1280px) {
+    .AppServices__Section {
+        padding: 0px 55px 115px 55px;
+    }
+    .AppServices__TitleOverly {
+        font-size: 83px;
+    }
+    .AppServices__SecTitle {
+        font-size: 55.15px;
+    }
+    .AppServices__Desc {
+        font-size: 32px;
+        line-height: 46.86px;
+    }
+    .AppServices__SectionBox {
+        margin-bottom: 35px;
+    }
+    .AppServices__ServiceItemsBox .ServicesTitle span {
+        font-size: 47px;
+    }
+    .AppServices__ServiceItemsBox .ServicesTitle {
+        font-size: 32.72px;
+        line-height: 48.86px;
+        margin-bottom: 30px;
+    }
+    .AppServices__CardItems .AppService__Title {
+        font-size: 38px;margin-top: 30px;
+    }
+    .custom__button.AppServicesBTN {
+        font-size: 36px;
+        line-height: 65px;
+        padding: 0 20px;
+        height: 65px;
+    }
+}
+@media (max-width: 1199px) {
+    .AppServices__Section {
+        padding: 0px 40px 115px 40px;
+    }
+    .AppServices__TitleOverly {
+        top: 0;
+        line-height: 95px;
+    }
+    .AppServices__SecTitle {
+        line-height: 80px;
+    }
+    .custom__button.AppServicesBTN {
+        font-size: 34px;
+        line-height: 60px;
+        padding: 0px 18px;
+        height: 60px;
+    }
+    .AppServices__CardItems .AppService__Title {
+        font-size: 35px;
+        margin-top: 38px;
+        line-height: 1.1;
+    }
+    .AppServices__SecTitle {
+        font-size: 50.15px;
+    }
+    .AppServices__Desc {
+        font-size: 26px;
+        line-height: 42.86px;
+    }
+    .AppServices__ServiceItemsBox .ServicesTitle span {
+        font-size: 40px;
+    }
+    .AppServices__TitleOverly {
+        font-size: 70px;
+    }
+}
+@media (max-width: 991px) {
+    .AppServices__Section {
+        padding: 0px 30px 95px 30px;
+    }
+    .AppServices__TitleOverly {
+        line-height: 60px;
+        font-size: 50px;
+    }
+    .AppServices__SecTitle {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .AppServices__Desc {
+        font-size: 20px;
+        line-height: 38.86px;
+    }
+    .AppServices__SectionBox {
+        margin-bottom: 20px;
+    }
+    .AppServices__ServiceItemsBox .ServicesTitle {
+        font-size: 26.72px;
+    }
+    .AppServices__ServiceItemsBox .ServicesTitle span {
+        font-size: 30px;
+    }
+    .AppServices__CardItems .AppService__Title {
+        font-size: 26px;
+        margin-top: 20px;
+        line-height: 1.1;
+    }
+ 
+    .custom__button.AppServicesBTN {
+        font-size: 25px;
+        line-height: 52px;
+        padding: 0px 18px;
+        height: 51px;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .AppServicess__cardWrapperBox {
+        margin-bottom: 29px;
+    }
+    .ShapeBottom.colorShapeBottom {
+        bottom: -68px;
+        left: 0;
+    }
+    .AppServices__Section {
+        padding: 0px 10px 95px 10px;
+    }
+    .AppServices__Section .AppServices__sectionWrapper {
+        padding: 43px 18px 35px 18px;
+    }
+    .AppServices__TitleOverly {
+        line-height: 15px;
+        font-size: 24px;
+    }
+    .AppServices__SecTitle {
+        font-size: 22px;
+        line-height: 42px;
+    }
+    .cardImg__overlyn {
+        width: 83% !important;
+    }
+    .AppServicess__cardWrapperBox:nth-child(3) .AppServices__CardItems .AppServicess__itemsImage .cardImg__overlyn,
+    .AppServicess__cardWrapperBox:nth-child(2) .AppServices__CardItems .AppServicess__itemsImage .cardImg__overlyn {
+        left: 0;
+        top: 0;
+    }
+    .AppServices__Desc {
+        font-size: 15px;
+        line-height: 19.86px;
+    }
+    .AppServices__ServiceItemsBox .ServicesTitle span {
+        font-size: 20px;
+    }
+    .AppServices__ServiceItemsBox .ServicesTitle {
+        font-size: 17.72px;
+        line-height: 1.1;
+    }
+    .AppServices__ItemsBox {
+        display: block;
+      
+    }
+    .AppServices__CardItems .AppService__Title {
+        font-size: 24px;
+        margin-top: 34px;
+        line-height: 1.1;
+    }
+    .custom__button.AppServicesBTN {
+        font-size: 16px;
+        line-height: 40px;
+        padding: 0px 12px;
+        height: 43px;
+    }
+    .AppServicess__itemsImage img {
+        width: 93%;
+    }
+    .AppServicess__cardWrapperBox:nth-child(3){
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:750px) and (min-width:570px) {
+    .cardImg__overlyn {
+        width: 80% !important;
+    }
+    .AppServicess__cardWrapperBox:nth-child(3) .AppServices__CardItems .AppServicess__itemsImage .cardImg__overlyn, 
+    .AppServicess__cardWrapperBox:nth-child(2) .AppServices__CardItems .AppServicess__itemsImage .cardImg__overlyn {
+        left: 0;
+        top: 35px;
+    }
+    .AppServices__SecTitle {
+        font-size: 30px;
+    }
+    .AppServices__TitleOverly {
+        font-size: 40px;
+    }
+    .AppSection__Title {
+        font-size: 30px;
+    }
+}
+@media (max-width:1600px) {
+    .AppServices__Section .AppServices__sectionWrapper {
+        top: 12px;
+    }
+}

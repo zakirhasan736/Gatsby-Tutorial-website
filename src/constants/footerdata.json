@@ -1,0 +1,30 @@
+[
+
+  
+    {
+        "id":1,
+        "NavName":"Privacy Policy",
+        "Navpath":"#"
+    },
+    {
+        "id":2,
+        "NavName":"Cookie Policy",
+        "Navpath":"#"
+    },
+    {
+        "id":3,
+        "NavName":"Terms and Conditions 退款承诺",
+        "Navpath":"#"
+    },
+    {
+        "id":4,
+        "NavName":"Terms of Use Honor Code",
+        "Navpath":"#"
+    },
+    {
+      "id":5,
+      "text":" @2022 COPYRIGHT, ALL RIGHT RESERVED ",
+      "path":"#"
+    }
+  
+]

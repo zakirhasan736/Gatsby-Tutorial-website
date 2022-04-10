@@ -1,0 +1,487 @@
+.AppServiceDetails__section{
+    position: relative;
+    overflow: hidden;
+}
+.AppServiceDetails__CardItems {
+    padding: 50px 245px 50px 90px;
+    background-color: var(--color-gray);
+    position: relative;
+}
+.AppServiceDetails__Card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.AppServiceDetails__Card {
+	max-width: 1620px;
+	margin: 0 auto;
+}
+.AppServiceDetails__CardItems:first-child{
+    padding-bottom: 28px;
+}
+.AppServiceDetails__CardItems:first-child .AppServiceDetails__Card{
+    align-items: flex-start;
+}
+.AppServiceDetails__CardItems:nth-child(2) {
+    padding: 74px 245px 80px 90px;
+}
+.AppServiceDetails__CardItems:nth-child(3) {
+    padding: 64px 245px 48px 90px;
+}
+.AppServiceDetails__CardItems:nth-child(odd) {
+    background-color: var(--color-brightRed);
+}
+.AppServiceDetails__CardItems:nth-child(odd) .AppServiceDetails__Card{
+    flex-direction: row-reverse;
+}
+.AppServiceDetails__TextBox{
+    padding-left: 70px;
+}
+.servicDetails__title {
+    font-family: var(--font-bese);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    margin-bottom: 54px;
+    color: var(--secondaryColor);
+}
+.servicDetails__Desc{
+    font-family: var(--font-bese);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: -0.5px;
+    text-align: justify;
+    color: var(--secondaryColor);
+    margin-bottom: 0px;
+    max-width: 933px;
+}
+.serviceDetails__Btn {
+    font-family: var(--font-bese);
+    font-size: 36px;
+    line-height: 40px;
+    color: var(--color-white);
+    font-weight: 700;
+    border-radius: 7px;
+    padding: 5px 11px;
+    border: 0;
+    background: transparent;
+    background-color: var(--primaryColor);
+    height: 55px;
+    margin-bottom: 0;
+    margin-top: 26px;
+    border: 2px solid transparent;
+    transition: all 350ms ease;
+}
+.AppServiceDetails__CardItems .serviceDetails__Btn:hover{
+    background: transparent;
+    color: var(--secondaryColor);
+    border-color: var(--secondaryColor);
+    }
+    .AppServiceDetails__CardItems:nth-child(odd) .serviceDetails__Btn:hover{
+        background: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+        }
+.AppServiceDetails__CardItems:nth-child(odd) .AppServiceDetails__TextBox{padding-left: 71px;}
+.AppServiceDetails__CardItems:nth-child(odd) .servicDetails__Desc,
+.AppServiceDetails__CardItems:nth-child(odd) .servicDetails__title{
+    color: var(--color-white);
+}
+.AppServiceDetails__CardItems:nth-child(2) .AppServiceDetails__ModelImgBox {
+    padding-left: 37px;
+    position: relative;
+    top: 46px;
+}
+.AppServiceDetails__CardItems:nth-child(2) .AppServiceDetails__TextBox {
+    padding-left: 65px;
+}
+.AppServiceDetails__CardItems:nth-child(2) .servicDetails__title {
+    margin-bottom: 38px;
+}
+.AppServiceDetails__CardItems:nth-child(odd) .serviceDetails__Btn{
+    color: var(--secondaryColor);
+    background: var(--color-white);
+}
+
+.AppServiceDetails__CardItems:first-child .AppServiceDetails__ModelImgBox {
+    position: relative;
+    top: -15px;
+    right: 19px;
+}
+.AppServiceDetails__CardItems:nth-child(4) .AppServiceDetails__TextBox {
+    padding-left: 0px;
+}
+.AppServiceDetails__CardItems:nth-child(3) .serviceDetails__Btn {
+    margin-top: 47px;
+}
+.AppServiceDetails__CardItems:nth-child(4) .AppServiceDetails__ModelImgBox {
+    position: relative;
+    left: -11px;
+    top: 20px;
+}
+.AppServiceDetails__CardItems:nth-child(4) .serviceDetails__Btn {
+    margin-top: 38px;
+}
+.AppServiceDetails__CardItems:nth-child(4) p.servicDetails__Desc {
+    line-height: 59px;
+}
+.AppServiceDetails__CardItems:nth-child(4) {
+    padding: 43px 245px 73px 90px;
+    
+}
+.AppServiceDetails__CardItems:nth-child(4) h3.servicDetails__title{margin-bottom: 30px;}
+
+
+@media  (max-width:1680px) {
+    .servicDetails__title {
+        font-size: 45px;
+        margin-bottom: 22px;
+    }
+    .AppServiceDetails__CardItems:nth-child(2) .servicDetails__title {
+        margin-bottom: 18px;
+    }
+    .servicDetails__Desc {
+        font-size: 26px;
+        line-height: 55px;
+    }
+    .serviceDetails__Btn {
+        font-size: 32px;
+        padding: 0 15px;
+    }
+    .AppServiceDetails__Card {
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1620px;
+        padding: 0 80px 0 20px;
+    }
+    .AppServiceDetails__CardItems:nth-child(2) {
+        padding: 74px 0px 80px 0px;
+    }
+    .AppServiceDetails__CardItems:nth-child(3) {
+        padding: 64px 0px 48px 0px;
+    }
+    .AppServiceDetails__CardItems {
+        padding: 50px 0px 50px 0px;
+    }
+    .AppServiceDetails__CardItems:nth-child(4) {
+        padding: 43px 0px 73px 0px;
+    }
+    .AppServiceDetails__CardItems:nth-child(4)  .AppServiceDetails__Card{
+padding-left: 60px;
+    }
+    .AppServiceDetails__CardItems:nth-child(4) .AppServiceDetails__TextBox {
+        padding-left: 25px;
+    }
+}
+@media  (max-width:1440px) {
+    .servicDetails__title {
+        font-size: 38px;
+    }
+    .servicDetails__Desc {
+        font-size: 22px;
+        line-height: 42px;
+    }
+    .serviceDetails__Btn {
+        font-size: 26px;
+        padding: 0 25px;
+    }
+    .AppServiceDetails__CardItems:first-child .AppServiceDetails__ModelImgBox {
+        right: 0;
+    }
+    .AppServiceDetails__ModelImgBox {
+        padding-left: 55px;
+    }
+    .AppServiceDetails__ModelImgBox img {
+        width: 100%;
+    }
+    .AppServiceDetails__CardItems:nth-child(2) .AppServiceDetails__ModelImgBox {
+        top: 0;
+    }
+    .AppServiceDetails__CardItems:nth-child(4) .AppServiceDetails__ModelImgBox {
+        top: 0;
+    }
+    .AppServiceDetails__CardItems:nth-child(4) p.servicDetails__Desc {
+        line-height: 40px;
+    }
+    .AppFeaturesDetails__ContentBoxItems:nth-child(3) .AppFeatures__Desc {
+        max-width: 530px;
+    }
+    .AppFeaturesDetails__ContentBoxItems:nth-child(4) .AppFeatures__Desc {
+        max-width: 445px;
+    }
+    .FeaturesModdelImg {
+        position: absolute;
+        right: -318px;
+        margin: auto;
+        top: 16%;
+    }
+    .AppServiceDetails__Card {
+        padding: 0 90px 0 90px;
+    }
+}
+@media  (max-width:1280px) {
+    .AppServiceDetails__CardItems:nth-child(2n+1) .AppServiceDetails__TextBox {
+        padding-left: 0;
+    }
+    .AppServiceDetails__Card {
+        padding: 0 70px 0 70px;
+    }
+    .servicDetails__title {
+        font-size: 34px;
+        line-height: 1.1;
+    }
+    .AppServiceDetails__CardItems p.servicDetails__Desc {
+        line-height: 37px;
+        font-size: 17px;
+    }
+    .serviceDetails__Btn {
+        font-size: 23px;
+        padding: 0px 16px;
+        line-height: 1.1;
+    }
+
+}
+@media (max-width: 1199px) {
+    .AppServiceDetails__CardItems:first-child {
+        padding-bottom: 0px;
+    }
+    .AppServiceDetails__Card {
+        padding: 0 60px 0 60px;
+    }
+    .AppServiceDetails__CardItems:first-child .ServiceDetail__ShapeRight {
+        right: 45px;
+    }
+    .AppServiceDetails__CardItems:nth-child(2) ,
+    .AppServiceDetails__CardItems {
+        padding: 50px 0px 50px 0px;
+    }
+    .ServiceDetail__ShapeRight img {
+        width: 70%;
+    }
+    .serviceDetails__Btn {
+        font-size: 21px;
+        padding: 0px 16px;
+        line-height: 45px;
+        height: 47px;
+    }
+    .AppServiceDetails__CardItems p.servicDetails__Desc {
+        line-height: 31px;
+        font-size: 15px;
+    }
+    .servicDetails__title {
+        font-size: 27px;
+        line-height: 1.1;
+    }
+    .AppServiceDetails__CardItems:nth-child(4) h3.servicDetails__title {
+        margin-bottom: 20px;
+    }
+    .AppServiceDetails__CardItems:nth-child(4) p.servicDetails__Desc {
+        line-height: 28px;
+    }
+    .AppServiceDetails__CardItems:nth-child(4) {
+        padding: 43px 0px 73px 0px;
+    }
+    .AppServiceDetails__CardItems:nth-child(4) .AppServiceDetails__ModelImgBox {
+        top: 0;
+        padding-left: 0;
+        padding-right: 29px;
+    }
+    .ShapeTop.FeaturTop {
+        left: 0px;
+        top: 0;
+    }
+}
+@media (max-width: 991px) {
+    .ShapeTop.FeaturTop {
+        left: 0px;
+        top: -30px;
+    }
+    .AppServiceDetails__Card {
+        padding: 0 55px 0 55px;
+    }
+    .ShapeTop.FeaturTop img{width: auto !important;}
+    .AppServiceDetails__CardItems:nth-child(4),
+    .AppServiceDetails__CardItems:nth-child(3),
+    .AppServiceDetails__CardItems:nth-child(2), .AppServiceDetails__CardItems {
+        padding: 50px 0px 50px 0px;
+    }
+
+    .AppServiceDetails__ModelImgBox {
+        padding-left: 0px;
+    }
+    .servicDetails__title {
+        font-size: 24px;
+        line-height: 1.1;
+    }
+    .serviceDetails__Btn {
+        font-size: 16px;
+        padding: 0px 12px;
+        line-height: 42px;
+        height: 42px;
+    }
+    .AppServiceDetails__CardItems p.servicDetails__Desc {
+        line-height: 27px;
+        font-size: 12px;
+    }
+    .AppServiceDetails__CardItems:nth-child(2) .AppServiceDetails__ModelImgBox {
+        padding-left: 0;
+        top: 30px;
+    }
+    .ServiceDetail__ShapeRight img {
+        width: 50%;
+    }
+    .AppServiceDetails__ModelImgBox {
+        padding-left: 34px;
+    }
+    .AppServiceDetails__CardItems:nth-child(3) .serviceDetails__Btn {
+        margin-top: 25px;
+    }
+    .AppServiceDetails__CardItems:nth-child(2) .AppServiceDetails__ModelImgBox {
+        top: 0;
+    }
+
+}
+@media (max-width: 767px) {
+    .AppServiceDetails__CardItems .AppServiceDetails__Card{display: block;}
+    .AppServiceDetails__CardItems:nth-child(4), .AppServiceDetails__CardItems:nth-child(3), .AppServiceDetails__CardItems:nth-child(2), .AppServiceDetails__CardItems {
+        padding: 50px 0px 50px 0px;
+    }
+    .servicDetails__title {
+        font-size: 24px;
+        line-height: 1.1;
+    }
+    .AppServiceDetails__CardItems:nth-child(4) .AppServiceDetails__Card {
+        padding-left: 20px;
+    }
+
+    .AppServiceDetails__Card {
+        padding: 0 25px 0 25px;
+    }
+    .AppServiceDetails__CardItems:first-child {
+        padding-bottom: 50px;
+    }
+    .AppServiceDetails__ModelImgBox {
+        padding-left: 0px;
+    }
+    .AppServiceDetails__CardItems .AppServiceDetails__TextBox {
+        text-align: center;
+    }
+    .AppServiceDetails__CardItems:nth-child(2) .AppServiceDetails__TextBox {
+        padding-left: 0px;
+        margin-top: 0px;
+    }
+    .AppServiceDetails__CardItems .AppServiceDetails__ModelImgBox {
+        padding: 30px 59px;
+        padding-top: 0;
+    }
+    .AppServiceDetails__CardItems:nth-child(4) .AppServiceDetails__ModelImgBox {
+        padding: 30px;
+    }
+    .AppServiceDetails__CardItems:nth-child(4) .serviceDetails__Btn {
+        margin-top: 24px;
+    }
+    .AppServiceDetails__CardItems:nth-child(4) .AppServiceDetails__TextBox {
+        padding-left: 0px !important;
+    }
+    .serviceDetails__Btn {
+        font-size: 14px;
+        height: 43px;
+        line-height: 27px;
+        padding: 0 15px;
+    }
+    .AppServiceDetails__CardItems:first-child .AppServiceDetails__ModelImgBox {
+       padding-bottom: 0;
+    }
+    .AppServiceDetails__CardItems:nth-child(2) .AppServiceDetails__ModelImgBox {
+        padding: 30px 30px;
+        top: 0px;
+    }
+    .AppServiceDetails__CardItems p.servicDetails__Desc {
+        line-height: 27px;
+        font-size: 16px;
+    }
+}
+
+    @media (max-width:767px) and (min-width:378px) {
+        .servicDetails__title {
+            font-size: 25px;
+            line-height: 1.1;
+        }
+        .AppServiceDetails__CardItems p.servicDetails__Desc {
+            line-height: 31px;
+            font-size: 17px;
+        }
+    .AppServiceDetails__TextBox{padding: 0 16px !important;}
+    .AppServiceDetails__CardItems:nth-child(4) .AppServiceDetails__TextBox {padding: 0 16px !important;}
+    .serviceDetails__Btn {
+        font-size: 14px;
+        height: 43px;
+        line-height: 27px;
+        padding: 0 15px;
+    }
+    .AppServiceDetails__CardItems .AppServiceDetails__ModelImgBox {
+        padding: 30px 88px 0;
+        padding-top: 0;
+    }
+    .AppServiceDetails__CardItems:nth-child(2) .AppServiceDetails__ModelImgBox {
+         padding: 30px 68px 25px;
+        top: 0px;
+
+    }
+    
+
+ .AppServiceDetails__CardItems:nth-child(3) .AppServiceDetails__ModelImgBox {
+    padding: 30px 78px 25px;
+   top: 0px;
+
+}
+.AppServiceDetails__CardItems:nth-child(4) .AppServiceDetails__ModelImgBox {
+    padding: 30px 68px 20px;
+   top: 0px;
+
+}
+
+
+}
+@media (max-width:767px) and (min-width:478px) {
+    .AppServiceDetails__CardItems .AppServiceDetails__ModelImgBox {
+        padding: 30px 114px 0;
+        padding-top: 0;
+    }
+    .AppServiceDetails__CardItems:nth-child(2) .AppServiceDetails__ModelImgBox {
+         padding: 30px 88px 25px;
+        top: 0px;
+
+    }
+    .servicDetails__title {
+        font-size: 26px;
+        line-height: 1.1;
+    }
+    .AppServiceDetails__CardItems p.servicDetails__Desc {
+        line-height: 31px;
+        font-size: 19px;
+    }
+
+ .AppServiceDetails__CardItems:nth-child(3) .AppServiceDetails__ModelImgBox {
+    padding: 30px 105px 25px;
+   top: 0px;
+
+}
+.AppServiceDetails__CardItems:nth-child(4) .AppServiceDetails__ModelImgBox {
+    padding: 30px 90px 20px;
+   top: 0px;
+
+}
+    .AppServiceDetails__TextBox{padding: 0 36px !important;}
+    .AppServiceDetails__CardItems:nth-child(4) .AppServiceDetails__TextBox {padding: 0 36px !important;}
+    .serviceDetails__Btn {
+        font-size: 15px;
+        height: 44px;
+        line-height: 30px;
+        padding: 0 16px;
+    }
+
+}

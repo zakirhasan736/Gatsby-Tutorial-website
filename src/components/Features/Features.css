@@ -1,0 +1,224 @@
+.AppFeaturesDetails__section {
+    position: relative;
+    background-color: var(--color-SoftGray);
+    padding: 157px 70px 190px 74px;
+    overflow: hidden;
+}
+.AppFeaturesDetails__section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    height: calc(31% + 3px);
+    background: var(--color-SoftGray);
+    z-index: 1;
+}
+.AppFeatures__sectionBox{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.AppFeatures__wrapperBox {
+	position: relative;
+}
+
+.AppFeaturesDetails__TopWrapper {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 380px;
+    position: relative;
+    z-index: 3;
+    max-width: 1760px;
+    margin: 0 auto;
+}
+.AppFeaturesDetails__ContentBoxItems .AppFeatures__title {
+    font-family: var(--font-base);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: 0px;
+    color: var(--secondaryColor);
+    margin-bottom: 22px;
+}
+.AppFeaturesDetails__ContentBoxItems .AppFeatures__Desc{
+    font-family: var(--font-base);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0px;
+    color: var(--color-black);
+    margin-bottom: 0;
+    max-width: 459px;
+}
+.AppFeaturesDetails__ContentBoxItems:nth-child(2),
+.AppFeaturesDetails__ContentBoxItems:nth-child(4){text-align: right;margin-left: auto;}
+.AppFeaturesDetails__ContentBoxItems:nth-child(3) .AppFeatures__Desc{ max-width: 660px;}
+.AppFeaturesDetails__ContentBoxItems:nth-child(4) .AppFeatures__Desc{ max-width: 495px;}
+
+@media  (max-width:1680px) {}
+@media  (max-width:1440px) {
+    .FeaturesModdelImg {
+        right: -318px;
+        top: 16%;
+    }
+    .AppFeaturesDetails__section::before {
+        height: calc(35% + 4px);
+    }
+}
+@media  (max-width:1280px) {
+    .AppFeaturesDetails__section {
+        padding: 165px 45px 190px 45px;
+    }
+
+    .AppFeaturesDetails__ContentBoxItems .AppFeatures__Desc {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .AppFeaturesDetails__ContentBoxItems .AppFeatures__title {
+        font-family: var(--font-base);
+        font-size: 34px;
+        line-height: 38px;
+    }
+    .AppFeaturesDetails__TopWrapper {
+        margin-top: 55px;
+    }
+    .AppFeaturesDetails__ContentBoxItems:nth-child(3) .AppFeatures__Desc ,
+    .AppFeaturesDetails__ContentBoxItems:nth-child(4) .AppFeatures__Desc {
+        max-width: 425px;
+    }
+
+    .AppFeaturesDetails__section::before {
+        height: calc(32% + 2px);
+    }
+    .FeaturesModdelImg {
+        right: -306px;
+        top: 6%;
+    }
+}
+@media (max-width: 1199px) {
+    .AppFeaturesDetails__ContentBoxItems .AppFeatures__Desc {
+        font-size: 15px;
+        line-height: 26px;
+        max-width: 330px;
+    }
+    .AppFeaturesDetails__ContentBoxItems .AppFeatures__title {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .AppFeaturesDetails__ContentBoxItems:nth-child(4) .AppFeatures__Desc,
+    .AppFeaturesDetails__ContentBoxItems:nth-child(3) .AppFeatures__Desc {
+        max-width: 365px;
+    }
+    .FeaturesModdelImg {
+        right: -43%;
+        top: 6%;
+    }
+}
+@media (max-width: 991px) {
+    .AppFeaturesDetails__ContentBoxItems .AppFeatures__Desc {
+        font-size: 12px;
+        line-height: 22px;
+        max-width: 230px;
+    }
+    .AppFeaturesDetails__ContentBoxItems .AppFeatures__title {
+        font-size: 21px;
+        line-height: 28px;
+    }
+    .AppFeaturesDetails__ContentBoxItems:nth-child(4) .AppFeatures__Desc, .AppFeaturesDetails__ContentBoxItems:nth-child(3) .AppFeatures__Desc {
+        max-width: 230px;
+    }
+    .FeaturesModdelImg img {
+        width: 55%;
+    }
+    .FeaturesModdelImg {
+        right: -83%;
+        top: 23%;
+    }
+}
+@media (max-width: 767px) {
+    .ShapeBottom.FeatureBottom {
+        bottom: -50px;
+    }
+    .FeaturesModdelImg img {
+        display: none;
+    }
+    .AppFeaturesDetails__section {
+        padding: 130px 35px 110px;
+    }
+    .RoundShape.Round3 {
+        left: 14%;
+        
+    }
+    .RoundShape.Round4 {
+        bottom: -9%;
+    }
+    .AppFeaturesDetails__ContentBoxItems .AppFeatures__title {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .FeaturesModdelImg {
+        right: 0;
+        top: auto;
+        bottom: -83% !important;
+    }
+    .AppFeaturesDetails__ContentBoxItems .AppFeatures__Desc {
+        font-size: 14px;
+        line-height: 26px;
+        max-width: 100%;
+        text-align: center;
+    }
+    .AppFeaturesDetails__ContentBoxItems:nth-child(3) .AppFeatures__Desc, .AppFeaturesDetails__ContentBoxItems:nth-child(4) .AppFeatures__Desc {
+        max-width: 100%;
+    }
+    .AppFeaturesDetails__TopWrapper {
+        display: block;
+        grid-row-gap: 0px;
+        position: relative;
+    }
+    .AppFeaturesDetails__ContentBoxItems {
+        text-align: left !important;
+        margin-bottom: 35px;
+    }
+    .AppFeaturesDetails__section::before {
+        height: 100%;
+        background: rgba(255,255,255,.8);
+    }
+    .AppFeaturesDetails__section {
+        padding: 130px 18px 110px;
+    }
+}
+@media (max-width:767px) and (min-width:378px) {
+    .AppFeaturesDetails__ContentBoxItems .AppFeatures__title {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .AppFeaturesDetails__ContentBoxItems .AppFeatures__Desc {
+        font-size: 12px;
+        line-height: 22px;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width:767px) and (min-width:478px) {
+    .AppFeaturesDetails__ContentBoxItems .AppFeatures__title {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .AppFeaturesDetails__ContentBoxItems .AppFeatures__Desc {
+        font-size: 14px;
+        line-height: 26px;
+        max-width: 100%;
+        text-align: center;
+    }
+    .AppFeaturesDetails__section {
+        padding: 130px 35px 110px;
+    }
+}
