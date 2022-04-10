@@ -3,7 +3,7 @@ module.exports = {
     title: `Tutorial Website`,
     description: `Tutorials Website for teaching perposes`,
     author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://github.com/zakirhasan736/Gatsby-Tutorial-website.git`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -38,4 +38,5 @@ module.exports = {
       },
     },
   ],
+  pathPrefix: `/Gatsby-Tutorial-website`,
 }
